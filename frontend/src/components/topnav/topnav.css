@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  height: 60px;
   justify-content: space-between;
   background-color: #1a1d24;
   align-items: center;
@@ -17,10 +18,10 @@
 .nav_ul {
   display: flex;
   width: 500px;
-  height: 30px;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  margin: 0;
 }
 
 .nav_ul_li a {
