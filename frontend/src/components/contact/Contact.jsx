@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 // import bootstrap pour form
 import {
   Form,
@@ -15,7 +15,7 @@ import "../contact/contact.css";
 export default function Contact() {
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = function (data) {
+  const sendEmail = function (data) {
     let emailData = {
       prenom: data.prenom,
       nom: data.nom,
@@ -23,10 +23,18 @@ export default function Contact() {
       message: data.message,
     };
 
-    axios
-      .post("http://localhost:4200/email", emailData)
+    //RAJOUTE ERREUR + REGEX
+
+    emailjs
+      .send(
+        "service_ioen4cy",
+        "template_agfj4hi",
+        emailData,
+        "user_G6oNKY5D2nwneA1FcDfIT"
+      )
       .then(function (res) {
-        return res.data;
+        console.log(res);
+        //AFFICHER UN MESSAGE COMME QUOI L EMAIL EST BIEN PARTI !
       })
       .catch(function (error) {
         return error;
@@ -36,10 +44,11 @@ export default function Contact() {
   return (
     <div className="containerContact">
       <h2>Me contacter</h2>
-      <Form onClick={handleSubmit(onSubmit)}>
+      <Form onSubmit={handleSubmit(sendEmail)}>
         <FormGroup className="mb-2">
           <FormLabel>Prénom</FormLabel>
           <FormControl
+            required
             type="text"
             placeholder="Martin"
             {...register("prenom", { required: true })}
@@ -48,6 +57,7 @@ export default function Contact() {
         <FormGroup className="mb-2">
           <FormLabel>Nom</FormLabel>
           <FormControl
+            required
             type="text"
             placeholder="Dupont"
             {...register("nom", { required: true })}
@@ -72,7 +82,9 @@ export default function Contact() {
             {...register("message", { required: true })}
           ></FormControl>
         </FormGroup>
-        <Button className="containerContact_btn">Envoyer</Button>
+        <Button type="submit" className="containerContact_btn">
+          Envoyer
+        </Button>
       </Form>
     </div>
   );
