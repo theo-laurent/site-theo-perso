@@ -1,0 +1,20 @@
+.sliderSkills {
+  width: 900px;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  margin: auto;
+  margin-bottom: 50px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sliderSkills_div img {
+  height: 120px;
+  margin: auto;
+}
+
+.sliderSkills_div img:hover {
+  cursor: pointer;
+}
