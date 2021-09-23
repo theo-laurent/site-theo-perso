@@ -1,0 +1,13 @@
+.bot {
+  color: white;
+  background-color: #1a1d24;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bot p {
+  margin: 0;
+  font-size: 13px;
+}

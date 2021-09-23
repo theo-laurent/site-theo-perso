@@ -1,0 +1,25 @@
+.projects {
+  width: 700px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.projects h1 {
+  border-bottom: solid black 1px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.projects_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.projects_container_text {
+  width: 40%;
+}
+.projects_container_img img {
+  width: 330px;
+}

@@ -1,23 +1,24 @@
 import "./App.css";
 // components
 import TopNav from "./components/topnav/TopNav";
+import Banner from "./components/banner/Banner";
 import Profil from "./components/profil/Profil";
 import Skills from "./components/skills/Skills";
-import Slider from "./components/slider/Slider";
+import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import BottomNav from "./components/botnav/BotNav";
+import Bot from "./components/bot/Bot";
 // import props
-import { SliderData } from "./datas/SliderData";
 
 function App() {
   return (
     <div className="App">
       <TopNav />
+      <Banner />
       <Profil />
       <Skills />
-      <Slider slides={SliderData} />
+      <Projects />
       <Contact />
-      <BottomNav />
+      <Bot />
     </div>
   );
 }

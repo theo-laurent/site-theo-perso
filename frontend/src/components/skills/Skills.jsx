@@ -1,7 +1,6 @@
-import React from "react";
 // import css
 import "../skills/skill.css";
-// import modules
+// import carousel
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,8 +26,8 @@ export default function Skills() {
   };
 
   return (
-    <>
-      <h2 style={{ textAlign: "center" }}>Mes compétences</h2>
+    <div className="skills">
+      <h1>Mes compétences</h1>
       <div className="sliderSkills">
         <Slider {...settings}>
           <div className="sliderSkills_div">
@@ -54,6 +53,6 @@ export default function Skills() {
           </div>
         </Slider>
       </div>
-    </>
+    </div>
   );
 }
