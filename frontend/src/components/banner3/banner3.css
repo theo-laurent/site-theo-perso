@@ -1,0 +1,24 @@
+.banner3 {
+  height: 180px;
+  background: linear-gradient(#e79ead, #eeb4c0);
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: center;
+  align-items: center;
+}
+
+.banner3 div {
+  text-align: center;
+}
+
+.banner3 img {
+  width: 100px;
+}
+
+@media screen and (max-width: 400px) {
+  .banner3 {
+    height: 120px;
+  }
+}

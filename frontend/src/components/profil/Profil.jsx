@@ -10,6 +10,12 @@ export default function Profil() {
         facilis, quis reiciendis accusamus. Sunt molestiae similique vero eos
         sequi labore assumenda esse?
       </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+        velit officia, et excepturi illo, vero illum accusantium ipsum, ullam
+        placeat reprehenderit exercitationem praesentium repellat blanditiis
+        ratione maiores distinctio quo doloremque!
+      </p>
     </div>
   );
 }

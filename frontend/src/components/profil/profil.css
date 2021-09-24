@@ -1,5 +1,5 @@
 .profil {
-  width: 700px;
+  width: 40%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -7,4 +7,13 @@
 
 .profil p {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .profil {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }

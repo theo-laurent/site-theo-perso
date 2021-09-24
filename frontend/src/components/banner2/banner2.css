@@ -1,0 +1,15 @@
+.banner2 {
+  height: 180px;
+  background-image: url("../../assets/imgProfil1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .banner2 {
+    height: 120px;
+  }
+}

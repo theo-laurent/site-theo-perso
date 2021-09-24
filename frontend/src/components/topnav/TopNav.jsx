@@ -1,20 +1,28 @@
 import "./topnav.css";
-import logo from "../../assets/logo.jpg";
 //
 
 export default function TopNav() {
   return (
     <div className="nav">
-      <img src={logo} className="nav_img" alt="logo" />
+      <div className="nav_logo">
+        <div className="nav_logo0"></div>
+        <div className="nav_logo1"></div>
+        <div className="nav_logo2"></div>
+        <div className="nav_logo3"></div>
+        <div className="nav_logo4"></div>
+      </div>
       <ul className="nav_ul">
         <li className="nav_ul_li">
-          <a href="#0">PROJETS </a>
+          <a href="#banner">ACCUEIL</a>
         </li>
         <li className="nav_ul_li">
-          <a href="#0">COMPETENCES </a>
+          <a href="#projects">PROJETS</a>
         </li>
         <li className="nav_ul_li">
-          <a href="#0">CONTACT </a>
+          <a href="#skills">COMPETENCES </a>
+        </li>
+        <li className="nav_ul_li">
+          <a href="#contact">CONTACT </a>
         </li>
       </ul>
     </div>

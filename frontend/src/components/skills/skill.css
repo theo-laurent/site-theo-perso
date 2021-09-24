@@ -4,7 +4,6 @@
 }
 
 .sliderSkills {
-  border-top: 1px black solid;
   margin-bottom: 50px;
   margin-top: 20px;
   height: 150px;
@@ -19,5 +18,12 @@
 }
 
 .sliderSkills_div img:hover {
-  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 400px) {
+  .skills {
+    width: 90%;
+    margin: auto;
+  }
 }

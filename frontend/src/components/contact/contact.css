@@ -1,13 +1,59 @@
-.containerContact {
+.globalContact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.containerMap {
   width: 600px;
-  margin: auto;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.containerContact {
+  width: 500px;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #f5f5f5;
-  padding: 50px;
+  padding: 40px;
   border-radius: 20px;
 }
 
+.containerContact2 div {
+  text-align: center;
+}
+
+.containerContact_input:enabled {
+  background-color: #f5f5f5;
+}
+
 .containerContact_btn {
-  background-color: rgb(7, 176, 255);
+  background-color: #4c6c9d;
+  border: none;
+  width: 150px;
+}
+
+.containerContact_btn:hover {
+  transition: 0.3s;
+  background-color: #ecaebb;
+}
+
+@media screen and (max-width: 400px) {
+  .globalContact {
+    display: block;
+  }
+
+  .containerMap {
+    width: 100%;
+    border-radius: 0;
+    background-color: #fff;
+  }
+
+  .containerContact {
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+  }
 }

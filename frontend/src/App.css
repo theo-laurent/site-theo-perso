@@ -2,6 +2,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ffffff;
   font-family: "lato";
+}
+
+h1 {
+  width: 60%;
+  margin: auto;
+  border-bottom: solid #eeb2bc 2px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    width: 90%;
+    margin: auto;
+  }
 }
