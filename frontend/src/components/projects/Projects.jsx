@@ -18,16 +18,23 @@ export default function Projects() {
               </div>
               <div className="projects_container_Text">
                 <h2>{projects.title}</h2>
-                <p>{projects.description}</p>
-                <p>{projects.techno}</p>
-                <a
-                  href={projects.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir le code sur Github
-                </a>
+                <p>
+                  - <strong>Frontend:</strong> {projects.frontend}
+                </p>
+                {projects.backend ? (
+                  <p>
+                    - <strong>Backend:</strong> {projects.backend}
+                  </p>
+                ) : null}
               </div>
+              <a
+              className="projects_container_link"
+                href={projects.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir le code sur Github
+              </a>
             </div>
           );
         })}

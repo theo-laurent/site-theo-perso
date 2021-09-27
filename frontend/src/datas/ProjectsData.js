@@ -7,7 +7,8 @@ export const ProjectsData = [
   {
     title: "Groupomania",
     description: "Développement fullstack d'un réseau social d'entreprise.",
-    techno: "HTML - CSS - JS - React Node.Js - Express.js - MySQL ",
+    frontend: "HTML - CSS - JS",
+    backend: "React Node.Js - Express.js - MySQL",
     image: imageGroupomania,
     lien: "rien",
     github:
@@ -16,7 +17,8 @@ export const ProjectsData = [
   {
     title: "Oh my food",
     description: "Intégration d'une maquette.",
-    techno: "HTML - CSS - Sass",
+    frontend: "HTML - CSS - Sass",
+    backend: "",
     image: imageOhmyfood,
     lien: "https://theo-laurent.github.io/Oh-My-Food-menus-et-cartes-de-restaurants-en-ligne/",
     github:
@@ -24,8 +26,9 @@ export const ProjectsData = [
   },
   {
     title: "Orinoco",
-    description: "HTML - CSS - JS - Bootstrap",
-    techno: "Développement frontend d'un site d'e-commerce.",
+    description: "Développement frontend d'un site d'e-commerce.",
+    frontend: "HTML - CSS - JS - Bootstrap",
+    backend: "",
     image: imageOrinoco,
     lien: "https://theo-laurent.github.io/P5-Front-Orinoco/",
     github: "https://github.com/theo-laurent/P5-Front-Orinoco",
@@ -33,7 +36,8 @@ export const ProjectsData = [
   {
     title: "Reservia",
     description: "Intégration d'une maquette.",
-    techno: "HTML - CSS",
+    frontend: "HTML - CSS",
+    backend: "",
     image: imageReservia,
     lien: "https://theo-laurent.github.io/Reservia-site-de-reservation-en-ligne./",
     github:
