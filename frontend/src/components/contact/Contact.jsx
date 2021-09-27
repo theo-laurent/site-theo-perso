@@ -1,5 +1,10 @@
+// import react hook form pour controle des formulaires
 import { useForm } from "react-hook-form";
+//import emailjs pour transmettre mail
 import emailjs from "emailjs-com";
+//import react tastify pour notif message
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 // import bootstrap pour form
 import {
   Form,
@@ -14,9 +19,40 @@ import "../contact/contact.css";
 // import icon
 import { FaPhoneAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { useState } from "react";
 
 export default function Contact() {
   const { register, handleSubmit } = useForm();
+  const [loading, setLoading] = useState(false);
+
+  const toastifySuccess = () => {
+    toast.success("Super, le message a bien été envoyé !", {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
+
+  const toastifyError = () => {
+    toast.error(
+      "Oups, le message n'a pas pu être envoyé, si le problème persiste, contactez moi en utilisant l'email indiqué ! ",
+      {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      }
+    );
+  };
 
   const sendEmail = function (data) {
     let emailData = {
@@ -33,14 +69,16 @@ export default function Contact() {
         "service_ioen4cy",
         "template_agfj4hi",
         emailData,
-        "user_G6oNKY5D2nwneA1FcDfIT"
+        "user_G6oNKY5D2nwneA1FcDfIT",
+        setLoading(true)
       )
       .then(function (res) {
-        console.log(res);
-        //AFFICHER UN MESSAGE COMME QUOI L EMAIL EST BIEN PARTI !
+        toastifySuccess();
+        setLoading(false);
       })
       .catch(function (error) {
-        return error;
+        toastifyError();
+        setLoading(false);
       });
   };
 
@@ -51,8 +89,8 @@ export default function Contact() {
         <div className="containerMap">
           <iframe
             title="maLocalisation"
-            width="300"
-            height="470"
+            width="100%"
+            height="400"
             scrolling="no"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=boulogne%20sur%20mer+(My%20Business%20Name)&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           />
@@ -119,10 +157,25 @@ export default function Contact() {
                 {...register("message", { required: true })}
               ></FormControl>
             </FormGroup>
-            <Button type="submit" className="containerContact_btn">
-              Envoyer
-            </Button>
+            {loading ? (
+              <div className="spinner-border mt-4"></div>
+            ) : (
+              <Button type="submit" className="containerContact_btn">
+                Envoyer
+              </Button>
+            )}
           </Form>
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         </div>
       </div>
     </div>

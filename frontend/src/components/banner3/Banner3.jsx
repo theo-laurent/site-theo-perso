@@ -16,7 +16,7 @@ export default function Banner3() {
         <img src={image2} alt="" />
       </div>
       <div>
-        <h3>De l'enthousiasme</h3>
+        <h3>Des idées</h3>
         <img src={image1} alt="" />
       </div>
     </div>

@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: apparitionProjects 0.7s ease-in-out;
 }
 
 .projects_container_Text {
@@ -71,5 +72,19 @@
   .globalProjects {
     width: 100%;
     margin: auto;
+  }
+}
+
+@keyframes apparitionProjects {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

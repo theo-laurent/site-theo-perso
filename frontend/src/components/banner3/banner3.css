@@ -17,8 +17,20 @@
   width: 100px;
 }
 
+
+
 @media screen and (max-width: 400px) {
   .banner3 {
     height: 120px;
+    grid-template-columns: repeat(3, 30%);
+    margin-top: 0;
+  }
+
+  .banner3 h3 {
+    font-size: 15px;
+  }
+
+  .banner3 img {
+    width: 50px;
   }
 }
