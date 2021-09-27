@@ -1,8 +1,8 @@
 import "./banner3.css";
 //
-import image1 from "../../assets/banner3Images/1.png";
-import image2 from "../../assets/banner3Images/2.png";
-import image3 from "../../assets/banner3Images/3.png";
+import image1 from "../../assets/banner3Images/1.webp";
+import image2 from "../../assets/banner3Images/2.webp";
+import image3 from "../../assets/banner3Images/3.webp";
 
 export default function Banner3() {
   return (

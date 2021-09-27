@@ -5,12 +5,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import assets
-import logohtml from "../../assets/skillsImages/logohtml.png";
-import logocss from "../../assets/skillsImages/logocss.png";
-import logojs from "../../assets/skillsImages/logojs.png";
-import logonode from "../../assets/skillsImages/logonode.png";
-import logomysql from "../../assets/skillsImages/logomysql.jpg";
-import logoreact from "../../assets/skillsImages/logoreact.png";
+import logohtml from "../../assets/skillsImages/logohtml.webp";
+import logocss from "../../assets/skillsImages/logocss.webp";
+import logojs from "../../assets/skillsImages/logojs.webp";
+import logonode from "../../assets/skillsImages/logonode.webp";
+import logomysql from "../../assets/skillsImages/logomysql.webp";
+import logoreact from "../../assets/skillsImages/logoreact.webp";
 import logomongodb from "../../assets/skillsImages/logomongodb.webp";
 
 export default function Skills() {

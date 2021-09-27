@@ -1,6 +1,6 @@
 import "../banner/banner.css";
 // import assets
-import imgProfil4 from "../../assets/imgProfil4.jpg";
+import imgProfil4 from "../../assets/imgProfil4.webp";
 
 export default function Banner() {
   return (
@@ -10,7 +10,11 @@ export default function Banner() {
         <h1>DEVELOPPEUR WEB</h1>
       </div>
       <div className="profilImage">
-        <img src={imgProfil4} alt="" className="profilImage_img" />
+        <img
+          src={imgProfil4}
+          alt="Un ordinateur portable posé sur sur une table en bois clair, sobre, esthétique."
+          className="profilImage_img"
+        />
       </div>
     </div>
   );
