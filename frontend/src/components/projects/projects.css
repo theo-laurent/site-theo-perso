@@ -22,7 +22,7 @@
 }
 
 .projects_container_Text {
-  height: 230px;
+  height: 220px;
   width: 80%;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
