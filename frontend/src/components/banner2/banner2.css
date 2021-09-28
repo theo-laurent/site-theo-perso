@@ -6,6 +6,22 @@
   background-origin: padding-box;
   margin-bottom: 50px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner2 a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #1b3a69;
+}
+
+.banner2 a:hover {
+  color: WHITE;
+  background-color: #ce4758;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 400px) {

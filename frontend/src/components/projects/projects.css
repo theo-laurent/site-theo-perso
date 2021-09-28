@@ -12,7 +12,6 @@
 .projects_container {
   width: 400px;
   margin: 20px;
-  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,10 +21,8 @@
 }
 
 .projects_container_Text {
-  height: 220px;
   width: 80%;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
   margin-top: 20px;
 }
 
@@ -52,6 +49,7 @@
   padding: 8px;
   height: 40px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .projects_container_link:hover {
@@ -64,9 +62,9 @@
   position: absolute;
   background-color: #4c6c9d;
   opacity: 0;
-  width: 310px;
-  height: 270px;
-  margin: -5px;
+  width: 330px;
+  height: 280px;
+  margin-left: -15px;
 }
 
 .projects_container_img_overlay:hover {
@@ -76,6 +74,7 @@
 
 .projects_container_img img {
   width: 300px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 400px) {

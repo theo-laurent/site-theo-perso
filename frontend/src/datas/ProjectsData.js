@@ -8,15 +8,15 @@ export const ProjectsData = [
     title: "Groupomania",
     description: "Développement fullstack d'un réseau social d'entreprise.",
     frontend: "HTML - CSS - JS",
-    backend: "React Node.Js - Express.js - MySQL",
+    backend: "React - Node.Js - Express.js - MySQL",
     image: imageGroupomania,
-    lien: "rien",
+    lien: "https://github.com/theo-laurent/Groupomania-reseau-social-d-entreprise",
     github:
       "https://github.com/theo-laurent/Groupomania-reseau-social-d-entreprise",
   },
   {
     title: "Oh my food",
-    description: "Intégration d'une maquette.",
+    description: "Intégration d'une maquette en responsive.",
     frontend: "HTML - CSS - Sass",
     backend: "",
     image: imageOhmyfood,
@@ -26,7 +26,7 @@ export const ProjectsData = [
   },
   {
     title: "Orinoco",
-    description: "Développement frontend d'un site d'e-commerce.",
+    description: "Développement frontend d'un site e-commerce.",
     frontend: "HTML - CSS - JS - Bootstrap",
     backend: "",
     image: imageOrinoco,
