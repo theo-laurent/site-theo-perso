@@ -2,6 +2,7 @@ import imageGroupomania from "../assets/projectsImages/imageGroupomania.webp";
 import imageReservia from "../assets/projectsImages/imageReservia.webp";
 import imageOhmyfood from "../assets/projectsImages/imageOhmyfood.webp";
 import imageOrinoco from "../assets/projectsImages/imageOrinoco.webp";
+import imageFindmeamanga from "../assets/projectsImages/imageFindmeamanga.webp";
 
 export const ProjectsData = [
   {
@@ -13,6 +14,16 @@ export const ProjectsData = [
     lien: "https://github.com/theo-laurent/Groupomania-reseau-social-d-entreprise",
     github:
       "https://github.com/theo-laurent/Groupomania-reseau-social-d-entreprise",
+  },
+  {
+    title: "Find me a manga ",
+    description:
+      "Développement d'un petit projet permettant de rechercher des mangas par genre, lorsque l'on est en panne d'inspiration !",
+    frontend: "HTML - CSS - React",
+    backend: "",
+    image: imageFindmeamanga,
+    lien: "https://theo-laurent.github.io/findMeAManga/",
+    github: "https://github.com/theo-laurent/findMeAManga",
   },
   {
     title: "Oh my food",

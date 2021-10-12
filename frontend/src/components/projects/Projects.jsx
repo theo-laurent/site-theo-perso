@@ -1,6 +1,8 @@
 import "./projects.css";
-//
+// import données projets
 import { ProjectsData } from "../../datas/ProjectsData";
+// import logo lien github
+import gitHub from "../../assets/projectsImages/logoGithub.webp";
 
 export default function Projects() {
   return (
@@ -23,11 +25,11 @@ export default function Projects() {
                 <h2>{projects.title}</h2>
                 <p>{projects.description}</p>
                 <p>
-                  - <strong>Frontend:</strong> {projects.frontend}
+                  <strong>Frontend:</strong> {projects.frontend}
                 </p>
                 {projects.backend ? (
                   <p>
-                    - <strong>Backend:</strong> {projects.backend}
+                    <strong>Backend:</strong> {projects.backend}
                   </p>
                 ) : null}
               </div>
@@ -37,7 +39,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Voir le code sur Github
+                <img src={gitHub} alt="le logo de Github, un chat poulpe" />
               </a>
             </div>
           );

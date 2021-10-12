@@ -23,12 +23,17 @@
 .projects_container_Text {
   width: 80%;
   display: grid;
+  grid-template-rows: 50px 80px 60px 80px;
   margin-top: 20px;
+}
+
+.projects_container a {
+  margin-bottom: 10px;
 }
 
 .projects_container_Text p {
   background-color: WHITE;
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -39,23 +44,10 @@
   height: 50px;
 }
 
-.projects_container_link {
-  width: 60%;
-  min-width: 240px;
-  margin: auto;
-  background-color: #a8d7db;
-  color: #1a1d24;
-  text-decoration: none;
-  padding: 8px;
-  height: 40px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.projects_container_link:hover {
+.projects_container a:hover {
+  transform: scale(1.1);
   background-color: #eeb4c0;
-  transition: 0.4s;
-  color: white;
+  border-radius: 5px;
 }
 
 .projects_container_img_overlay {

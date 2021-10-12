@@ -24,8 +24,12 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .banner2 {
     height: 120px;
+  }
+
+  .banner2 a {
+    font-size: 20px;
   }
 }
