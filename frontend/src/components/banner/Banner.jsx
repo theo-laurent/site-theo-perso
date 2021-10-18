@@ -7,7 +7,7 @@ export default function Banner() {
     <div className="containerProfil" id="banner">
       <div className="profilTitle">
         <h2>Théo Laurent</h2>
-        <h1>DEVELOPPEUR WEB</h1>
+        <h1>DEVELOPPEUR FRONT-END</h1>
       </div>
       <div className="profilImage">
         <img

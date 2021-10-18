@@ -11,17 +11,22 @@
   align-items: center;
 }
 
+.banner2 h3 {
+  font-size: 35px;
+  margin: 0;
+}
+
 .banner2 a {
-  font-size: 40px;
+  backdrop-filter: blur(20px);
   text-decoration: none;
-  color: #1b3a69;
+  color: black;
+  margin: 0;
+  padding: 15px;
 }
 
 .banner2 a:hover {
-  color: WHITE;
-  background-color: #ce4758;
-  padding: 10px;
-  border-radius: 5px;
+  color: white;
+  background-color: #4c6c9d;
 }
 
 @media screen and (max-width: 800px) {

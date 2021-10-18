@@ -9,7 +9,7 @@ export default function Profil() {
         dans le développement web en 2020. J'habite à Boulogne sur mer.
       </p>
       <p>
-        Développeur fullstack junior j'utilise notamment le framework React. Mes
+        Développeur front-end junior j'utilise notamment le framework React. Mes
         compétences incluent aussi la maitrise du SEO, l'approche responsive des
         sites web et la protection des données utilisateurs.
       </p>
