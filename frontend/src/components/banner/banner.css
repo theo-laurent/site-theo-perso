@@ -63,6 +63,10 @@
     padding-bottom: 15px;
   }
 
+  .profilTitle h1 {
+    font-size: 20px;
+  }
+
   .profilImage_img {
     animation: none;
     transform: scale(2.1);
