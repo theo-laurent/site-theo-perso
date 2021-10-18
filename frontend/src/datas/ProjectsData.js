@@ -2,14 +2,14 @@ import imageGroupomania from "../assets/projectsImages/imageGroupomania.webp";
 import imageReservia from "../assets/projectsImages/imageReservia.webp";
 import imageOhmyfood from "../assets/projectsImages/imageOhmyfood.webp";
 import imageOrinoco from "../assets/projectsImages/imageOrinoco.webp";
-import imageFindmeamanga from "../assets/projectsImages/imageFindmeamanga.webp";
+import imageFindmeamanga from "../assets/projectsImages/imageFindMeAManga.webp";
 
 export const ProjectsData = [
   {
     title: "Groupomania",
     description: "Développement fullstack d'un réseau social d'entreprise.",
-    frontend: "HTML - CSS - JS",
-    backend: "React - Node.Js - Express.js - MySQL",
+    frontend: "HTML - CSS - React.js",
+    backend: "Node.Js - Express.js - MySQL",
     image: imageGroupomania,
     lien: "https://github.com/theo-laurent/Groupomania-reseau-social-d-entreprise",
     github:
@@ -19,7 +19,7 @@ export const ProjectsData = [
     title: "Find me a manga ",
     description:
       "Développement d'un petit projet permettant de rechercher des mangas par genre, lorsque l'on est en panne d'inspiration !",
-    frontend: "HTML - CSS - React",
+    frontend: "HTML - CSS - React.js",
     backend: "",
     image: imageFindmeamanga,
     lien: "https://theo-laurent.github.io/findMeAManga/",

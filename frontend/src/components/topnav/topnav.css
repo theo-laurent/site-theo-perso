@@ -14,35 +14,8 @@
 
 .nav_logo {
   display: flex;
-}
-
-.nav_logo0 {
-  background-color: #4c6c9d;
-  width: 15px;
-  height: 70px;
-}
-.nav_logo1 {
-  background-color: #99ced4;
-  width: 30px;
-  height: 70px;
-}
-
-.nav_logo2 {
-  background-color: #709abf;
-  width: 70px;
-  height: 70px;
-}
-
-.nav_logo3 {
-  background-color: #eeb4c0;
-  width: 20px;
-  height: 70px;
-}
-
-.nav_logo4 {
-  background-color: #6e7376;
-  width: 100px;
-  height: 70px;
+  height: 100%;
+  margin-left: 40px;
 }
 
 .nav_img {
@@ -100,11 +73,10 @@
 
 @media screen and (max-width: 835px) {
   .nav {
-    justify-content: right;
+    justify-content: space-between;
   }
 
-  .nav_ul,
-  .nav_logo {
+  .nav_ul {
     display: none;
   }
 

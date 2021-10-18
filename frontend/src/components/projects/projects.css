@@ -23,7 +23,7 @@
 .projects_container_Text {
   width: 80%;
   display: grid;
-  grid-template-rows: 50px 80px 60px 80px;
+  grid-template-rows: auto 120px 75px 75px;
   margin-top: 20px;
 }
 

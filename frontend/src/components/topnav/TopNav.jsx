@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./topnav.css";
-//
+// import image
+import logo from "../../assets/_logo.png";
 
 export default function TopNav() {
   const [toggle, setToggle] = useState(false);
@@ -12,11 +13,7 @@ export default function TopNav() {
   return (
     <nav className="nav">
       <div className="nav_logo">
-        <div className="nav_logo0"></div>
-        <div className="nav_logo1"></div>
-        <div className="nav_logo2"></div>
-        <div className="nav_logo3"></div>
-        <div className="nav_logo4"></div>
+        <img src={logo} alt="" />
       </div>
       <div className="nav_responsive" onClick={navClick}>
         <svg
