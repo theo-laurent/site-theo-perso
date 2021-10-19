@@ -1,7 +1,7 @@
 .nav {
   display: flex;
+  justify-content: flex-end;
   height: 70px;
-  justify-content: space-between;
   background-color: #4c6c9d;
   position: sticky;
   top: 0;
@@ -13,13 +13,12 @@
 }
 
 .nav_logo {
-  display: flex;
-  height: 100%;
+  position: absolute;
+  left: 5px;
 }
 
-.nav_img {
-  width: 20%;
-  height: 100%;
+.nav_logo img {
+  height: 70px;
 }
 
 .nav_ul {
@@ -85,6 +84,7 @@
     align-items: flex-end;
     padding-top: 10px;
     cursor: pointer;
+    width: 100%;
   }
 
   .nav_responsive_ul-close {
@@ -97,9 +97,11 @@
     list-style: none;
     color: white;
     background-color: #4c6c9d;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     height: 250px;
-    width: 250px;
+    width: 100%;
+    padding-left: 0;
     justify-content: space-around;
+    align-items: center;
   }
 }
